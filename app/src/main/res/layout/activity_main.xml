@@ -16,7 +16,13 @@
             android:orientation="vertical"
             >
 
-
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:id="@+id/name_editText"
+                android:inputType="textCapWords"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,6 +38,14 @@
                 android:paddingStart="24dp"
                 android:paddingLeft="24dp"
                 android:id="@+id/Cream_checkbox" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocolate"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                android:id="@+id/chocolate_checkbox"/>
+
 
 
 
@@ -79,7 +93,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="without whipped cream"
+                android:text="without whipped cream \nwithout chocolate"
                 android:id="@+id/Cream_yesOrNo_textBox" />
 
             <Button
