@@ -10,7 +10,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -19,21 +18,21 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="@string/hint_name"
                 android:id="@+id/name_editText"
                 android:inputType="textCapWords"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Toppings"
+                android:text="@string/toppings"
                 style="@style/Title"
                 android:id="@+id/Topping_title" />
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Whipped Cream"
+                android:text="@string/whipped_cream"
                 android:textSize="16sp"
                 android:paddingStart="24dp"
                 android:paddingLeft="24dp"
@@ -41,7 +40,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chocolate"
+                android:text="@string/chocolate"
                 android:paddingLeft="24dp"
                 android:textSize="16sp"
                 android:id="@+id/chocolate_checkbox"/>
@@ -52,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quantity"
+                android:text="@string/quantity"
                 style="@style/Title"
                 android:id="@+id/Quantity_title" />
             <LinearLayout
@@ -67,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
+                    android:text="1"
                     android:id="@+id/Quantity_info" />
                 <Button
                     android:text="+"
@@ -80,26 +79,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Order Summary"
+                android:text="@string/order_summary"
                 style="@style/Title"
                 android:id="@+id/OrderSummary_title" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="1"
                 android:id="@+id/Price_info" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="without whipped cream \nwithout chocolate"
-                android:id="@+id/Cream_yesOrNo_textBox" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Order"
+                android:text="@string/order"
                 android:id="@+id/Order_button"
                 android:onClick="order"/>
 
